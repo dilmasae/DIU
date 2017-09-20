@@ -39,7 +39,7 @@ public class JFramePractica1 extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         valorTextField = new javax.swing.JTextField();
         divisa1 = new javax.swing.JTextField();
-        valor = new javax.swing.JLabel();
+        valorLabel = new javax.swing.JLabel();
         divisa1Label = new javax.swing.JLabel();
         btnDivisa2 = new javax.swing.JButton();
         btnDivisa1 = new javax.swing.JButton();
@@ -67,7 +67,7 @@ public class JFramePractica1 extends javax.swing.JFrame {
             }
         });
 
-        valor.setText("Tipo de valor");
+        valorLabel.setText("Tipo de valor");
 
         divisa1Label.setText("Importe");
 
@@ -111,7 +111,7 @@ public class JFramePractica1 extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(valor)
+                                        .addComponent(valorLabel)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(valorTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -138,7 +138,7 @@ public class JFramePractica1 extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(44, 44, 44)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(valor)
+                            .addComponent(valorLabel)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(valorTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(btnDivisa1)))
@@ -161,7 +161,7 @@ public class JFramePractica1 extends javax.swing.JFrame {
         );
 
         autoresLabel.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        autoresLabel.setText("Edilma Alvarado Espinoza y Levi Mallet Practica1");
+        autoresLabel.setText("Edilma Alvarado Espinoza y Levi Mallet - Practica1");
         autoresLabel.setToolTipText("");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -322,7 +322,7 @@ public class JFramePractica1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel mensajeLabel;
-    private javax.swing.JLabel valor;
+    private javax.swing.JLabel valorLabel;
     private javax.swing.JTextField valorTextField;
     // End of variables declaration//GEN-END:variables
 }

@@ -73,7 +73,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="1" attributes="0">
                                       <Group type="102" alignment="1" attributes="0">
-                                          <Component id="valor" min="-2" max="-2" attributes="0"/>
+                                          <Component id="valorLabel" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="valorTextField" min="-2" pref="79" max="-2" attributes="0"/>
                                       </Group>
@@ -112,7 +112,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="valor" min="-2" max="-2" attributes="0"/>
+                              <Component id="valorLabel" min="-2" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="valorTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="btnDivisa1" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -154,7 +154,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="divisa1ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="valor">
+        <Component class="javax.swing.JLabel" name="valorLabel">
           <Properties>
             <Property name="text" type="java.lang.String" value="Tipo de valor"/>
           </Properties>
@@ -217,7 +217,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Edilma Alvarado Espinoza y Levi Mallet Practica1"/>
+        <Property name="text" type="java.lang.String" value="Edilma Alvarado Espinoza y Levi Mallet - Practica1"/>
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
     </Component>
