@@ -5,14 +5,7 @@
  */
 package jswingpractica1;
 
-import java.awt.event.ActionListener;
 import java.text.DecimalFormat;
-import javax.swing.InputVerifier;
-import javax.swing.JComponent;
-import javax.swing.JFormattedTextField;
-import javax.swing.JOptionPane;
-import javax.swing.JTextField;
-import javax.swing.text.MaskFormatter;
 
 /**
  *
@@ -192,7 +185,7 @@ public class JFramePractica1 extends javax.swing.JFrame {
     private void valorTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_valorTextFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_valorTextFieldActionPerformed
-    
+
     private void divisa1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divisa1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_divisa1ActionPerformed
@@ -210,9 +203,9 @@ public class JFramePractica1 extends javax.swing.JFrame {
         else return number*-1.00;
     }
 
-  
+
     private void btnDivisa1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivisa1ActionPerformed
- 
+
         try{
             if(!numberNotEmpty(valorTextField.getText())&& !numberNotEmpty(divisa1.getText())){
                 mensajeLabel.setText("Campos vacíos.");
@@ -220,13 +213,14 @@ public class JFramePractica1 extends javax.swing.JFrame {
             else{
                 valorTextField.setText(isPositiveNumber(Double.parseDouble(valorTextField.getText())) + "");
                 divisa1.setText(isPositiveNumber(Double.parseDouble(divisa1.getText())) + "");
-                divisa2.setText(changeToTwoDigits(isPositiveNumber(Double.parseDouble(valorTextField.getText())) * isPositiveNumber(Double.parseDouble(divisa1.getText()))));
+                divisa2.setText(changeToTwoDigits(isPositiveNumber(Double.parseDouble(valorTextField.getText()))
+                                                    * isPositiveNumber(Double.parseDouble(divisa1.getText()))));
                 mensajeLabel.setText("");
                 divisaLabel.setText("dolar > euro");
             }
         }catch(Exception e){
             mensajeLabel.setText("valores invalidos");
-        }   
+        }
     }//GEN-LAST:event_btnDivisa1ActionPerformed
 
     private void btnDivisa2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivisa2ActionPerformed
@@ -238,7 +232,8 @@ public class JFramePractica1 extends javax.swing.JFrame {
             else{
                 valorTextField.setText(isPositiveNumber(Double.parseDouble(valorTextField.getText())) + "");
                 divisa2.setText(isPositiveNumber(Double.parseDouble(divisa2.getText())) + "");
-                divisa1.setText(changeToTwoDigits(isPositiveNumber(Double.parseDouble(valorTextField.getText())) * isPositiveNumber(Double.parseDouble(divisa2.getText()))));
+                divisa1.setText(changeToTwoDigits(isPositiveNumber(Double.parseDouble(valorTextField.getText()))
+                                                    * isPositiveNumber(Double.parseDouble(divisa2.getText()))));
                 mensajeLabel.setText("");
                 divisaLabel.setText("dolar < euro");
             }
@@ -254,7 +249,7 @@ public class JFramePractica1 extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
