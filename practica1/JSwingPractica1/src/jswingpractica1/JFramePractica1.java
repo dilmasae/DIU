@@ -16,7 +16,7 @@ import javax.swing.text.MaskFormatter;
 
 /**
  *
- * @author Edilma Alvaraado Espinoza y Levi Ma
+ * @author Edilma Alvaraado Espinoza y Levi Malest Villareal
  */
 public class JFramePractica1 extends javax.swing.JFrame {
 
@@ -46,7 +46,7 @@ public class JFramePractica1 extends javax.swing.JFrame {
         divisa2 = new javax.swing.JTextField();
         divisaLabel = new javax.swing.JLabel();
         mensajeLabel = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        divisa2Label = new javax.swing.JLabel();
         autoresLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -94,7 +94,7 @@ public class JFramePractica1 extends javax.swing.JFrame {
 
         mensajeLabel.setForeground(new java.awt.Color(255, 51, 0));
 
-        jLabel1.setText("Importe");
+        divisa2Label.setText("Importe");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -125,7 +125,7 @@ public class JFramePractica1 extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(divisa2, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel1)))))
+                                    .addComponent(divisa2Label)))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(120, 120, 120)
                         .addComponent(divisaLabel)))
@@ -154,7 +154,7 @@ public class JFramePractica1 extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(divisaLabel)
                         .addGap(15, 15, 15)
-                        .addComponent(jLabel1)
+                        .addComponent(divisa2Label)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(divisa2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -289,8 +289,8 @@ public class JFramePractica1 extends javax.swing.JFrame {
     private javax.swing.JTextField divisa1;
     private javax.swing.JLabel divisa1Label;
     private javax.swing.JTextField divisa2;
+    private javax.swing.JLabel divisa2Label;
     private javax.swing.JLabel divisaLabel;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel mensajeLabel;
     private javax.swing.JLabel valorLabel;
