@@ -16,7 +16,7 @@ import javax.swing.text.MaskFormatter;
 
 /**
  *
- * @author DarkGirl
+ * @author Edilma Alvaraado Espinoza y Levi Ma
  */
 public class JFramePractica1 extends javax.swing.JFrame {
 
@@ -161,7 +161,7 @@ public class JFramePractica1 extends javax.swing.JFrame {
         );
 
         autoresLabel.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        autoresLabel.setText("Edilma Alvarado Espinoza y Levi Mallet - Practica1");
+        autoresLabel.setText("Edilma Alvarado Espinoza y Levi Malest Villareal - Practica1");
         autoresLabel.setToolTipText("");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -245,35 +245,6 @@ public class JFramePractica1 extends javax.swing.JFrame {
         }catch(Exception e){
             mensajeLabel.setText("valores invalidos");
         }
-        
-        
-        
-        /*try{
-            if(  numberNotEmpty(valorTextField.getText()) && !numberNotEmpty(divisa2.getText()) || !numberNotEmpty(valorTextField.getText()) && numberNotEmpty(divisa2.getText()) ){
-                throw new Exception("Introduce un valor numérico en los dos campos");
-            }
-            else if(!numberNotEmpty(divisa1.getText()) && !numberNotEmpty(valorTextField.getText())) throw new Exception("Introduce un valor numérico en los dos campos");
-            
-            else if( isNumber(valorTextField.getText()) && isNumber(divisa2.getText())) throw new Exception("Introduce valores numericos");
-            
-            else if( !isNumber(valorTextField.getText()) && isNumber(divisa2.getText()) || isNumber(valorTextField.getText()) && !isNumber(divisa2.getText()) ) throw new Exception("Introduce valores numericos");
-            
-            else if( !isPositiveNumber(Double.parseDouble(valorTextField.getText())) && isPositiveNumber(Double.parseDouble(divisa2.getText()))) throw new Exception("Introducir valores Positivos");
-            
-            else if( isPositiveNumber(Double.parseDouble(valorTextField.getText())) && !isPositiveNumber(Double.parseDouble(divisa2.getText()))) throw new Exception("Introducir valores Positivos");
-            
-            else if( !isPositiveNumber(Double.parseDouble(valorTextField.getText())) && !isPositiveNumber(Double.parseDouble(divisa2.getText()))) throw new Exception("Introducir valores Positivos");
-            
-            else{
-                Double result = Double.parseDouble(valorTextField.getText()) * Double.parseDouble(divisa2.getText()) ;
-                divisa1.setText(changeToTwoDigits(result)+ "" );
-                divisaLabel.setText("dolar < euro");
-                
-            }
-        }
-        catch(Exception e){
-            JOptionPane.showMessageDialog(null, e.getMessage());
-        }*/
     }//GEN-LAST:event_btnDivisa2ActionPerformed
 
     /**
